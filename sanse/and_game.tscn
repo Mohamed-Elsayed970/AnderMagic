@@ -19,6 +19,7 @@ script = ExtResource("1_d3cqf")
 layout_mode = 0
 offset_right = 1154.0
 offset_bottom = 642.0
+color = Color(0.011677531, 0.640578, 0.40913343, 1)
 
 [node name="ColorRect" type="ColorRect" parent="ColorRect" unique_id=186643395]
 layout_mode = 1
@@ -48,7 +49,7 @@ offset_right = 537.0
 offset_bottom = 280.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0.87, 0, 0.014499779, 1)
+color = Color(1, 0.78549993, 0.00999999, 1)
 
 [node name="ColorRect3" type="ColorRect" parent="ColorRect" unique_id=563324418]
 layout_mode = 1
@@ -63,7 +64,7 @@ offset_right = 522.0
 offset_bottom = 273.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0.24288172, 0.41182086, 0.092038564, 1)
+color = Color(0.090100005, 0.53, 0.42735663, 1)
 
 [node name="Exit" type="Button" parent="." unique_id=1970058151]
 layout_mode = 1
