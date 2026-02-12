@@ -1,0 +1,72 @@
+[gd_scene format=3 uid="uid://2chye1k32j25"]
+
+[ext_resource type="TileSet" uid="uid://bb0rnt6girrco" path="res://Tilemap/game_tilemap.tres" id="1_vj84i"]
+[ext_resource type="PackedScene" uid="uid://but5t3l3ff3dk" path="res://sanse/player.tscn" id="2_hmhbw"]
+[ext_resource type="PackedScene" uid="uid://d2xgmyvls4kek" path="res://sanse/cion.tscn" id="3_xipch"]
+[ext_resource type="PackedScene" uid="uid://dl64q0sejkkdx" path="res://sanse/enemy.tscn" id="4_piop3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cdrcn"]
+size = Vector2(3406.15, 77.899994)
+
+[node name="game" type="Node2D" unique_id=2042196210]
+
+[node name="TileMap" type="Node2D" parent="." unique_id=1116577465]
+
+[node name="floor" type="TileMapLayer" parent="TileMap" unique_id=795279851]
+tile_set = ExtResource("1_vj84i")
+
+[node name="player" parent="." unique_id=476564898 instance=ExtResource("2_hmhbw")]
+z_index = 9
+position = Vector2(656, -154)
+
+[node name="coins" type="Node" parent="." unique_id=516753919]
+
+[node name="cion" parent="coins" unique_id=1115266652 instance=ExtResource("3_xipch")]
+position = Vector2(960, -72.00001)
+
+[node name="cion2" parent="coins" unique_id=1962348680 instance=ExtResource("3_xipch")]
+position = Vector2(1790, -41)
+
+[node name="cion3" parent="coins" unique_id=2102055323 instance=ExtResource("3_xipch")]
+position = Vector2(1953, -35)
+
+[node name="cion4" parent="coins" unique_id=2139838949 instance=ExtResource("3_xipch")]
+position = Vector2(2146, -51)
+
+[node name="cion5" parent="coins" unique_id=175768994 instance=ExtResource("3_xipch")]
+position = Vector2(3277, -46)
+
+[node name="cion6" parent="coins" unique_id=1000344054 instance=ExtResource("3_xipch")]
+position = Vector2(3991, -45)
+
+[node name="cion7" parent="coins" unique_id=1972134556 instance=ExtResource("3_xipch")]
+position = Vector2(4190, -53)
+
+[node name="cion8" parent="coins" unique_id=1815619306 instance=ExtResource("3_xipch")]
+position = Vector2(4383, -43.999985)
+
+[node name="killzone" type="Area2D" parent="." unique_id=269644915]
+position = Vector2(0, -11)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="killzone" unique_id=810177306]
+position = Vector2(11286, 1080)
+scale = Vector2(10, 5)
+shape = SubResource("RectangleShape2D_cdrcn")
+
+[node name="CharacterBody2D" parent="killzone" unique_id=1175815023 instance=ExtResource("4_piop3")]
+position = Vector2(4281, -105)
+
+[node name="CharacterBody2D2" parent="killzone" unique_id=618580252 instance=ExtResource("4_piop3")]
+position = Vector2(7586, -80)
+
+[node name="CharacterBody2D3" parent="killzone" unique_id=1380774699 instance=ExtResource("4_piop3")]
+position = Vector2(13177, -114)
+
+[node name="CharacterBody2D4" parent="killzone" unique_id=760723937 instance=ExtResource("4_piop3")]
+position = Vector2(15998, -46)
+
+[node name="respawn" type="Node2D" parent="." unique_id=2019507942]
+unique_name_in_owner = true
+position = Vector2(642, 12)
+
+[connection signal="body_entered" from="killzone" to="player" method="_on_killzone_body_entered"]
