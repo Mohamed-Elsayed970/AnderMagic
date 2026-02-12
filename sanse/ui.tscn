@@ -1,0 +1,98 @@
+[gd_scene format=3 uid="uid://cr25k850hb08c"]
+
+[ext_resource type="Script" uid="uid://ckm1ey0f3b2vb" path="res://scirap/ui.gd" id="1_0yose"]
+[ext_resource type="Theme" uid="uid://h1f7iqhh7ycb" path="res://New folder/FlatUI4/kenneyUI-yellow.tres" id="1_u8whb"]
+[ext_resource type="Theme" uid="uid://mbsg4xqnedxi" path="res://New folder/FlatUI4/kenneyUI-red.tres" id="3_q4f8l"]
+[ext_resource type="Theme" uid="uid://bnhngmri4tfgr" path="res://New folder/FlatUI4/kenneyUI-green.tres" id="4_cdr5l"]
+
+[node name="UI" type="Control" unique_id=498479556]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_0yose")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1235613615]
+layout_mode = 0
+offset_right = 1168.0
+offset_bottom = 657.0
+color = Color(0, 0.5010799, 0.20231244, 1)
+
+[node name="ColorRect" type="ColorRect" parent="ColorRect" unique_id=869190503]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -556.0
+offset_top = -311.5
+offset_right = 560.0
+offset_bottom = 304.5
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.29850608, 0.62038743, 0.4032271, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="ColorRect" unique_id=785203789]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -534.0
+offset_top = -300.5
+offset_right = 540.0
+offset_bottom = 286.5
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.3791319, 0.5967444, 0.3124029, 1)
+
+[node name="button" type="VBoxContainer" parent="." unique_id=1260771200]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -322.0
+offset_top = -235.0
+offset_right = 322.0
+offset_bottom = 235.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 16
+
+[node name="Play" type="Button" parent="button" unique_id=790722430]
+layout_mode = 2
+size_flags_vertical = 3
+theme = ExtResource("4_cdr5l")
+theme_override_font_sizes/font_size = 51
+toggle_mode = true
+text = "Play"
+
+[node name="Settings" type="Button" parent="button" unique_id=1313453782]
+layout_mode = 2
+size_flags_vertical = 3
+theme = ExtResource("3_q4f8l")
+theme_override_constants/outline_size = 0
+theme_override_font_sizes/font_size = 51
+text = "Settings"
+
+[node name="Exit" type="Button" parent="button" unique_id=1153864446]
+layout_mode = 2
+size_flags_vertical = 3
+theme = ExtResource("1_u8whb")
+theme_override_font_sizes/font_size = 51
+text = "Exit"
+
+[node name="Panel" type="Panel" parent="." unique_id=1022188395]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[connection signal="pressed" from="button/Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="button/Settings" to="." method="_on_about_pressed"]
+[connection signal="pressed" from="button/Exit" to="." method="_on_exit_pressed"]

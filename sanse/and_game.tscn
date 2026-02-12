@@ -1,0 +1,140 @@
+[gd_scene format=3 uid="uid://ca7tnnyxp2cq8"]
+
+[ext_resource type="Script" uid="uid://ulo4rx3aupeb" path="res://scirap/and_game.gd" id="1_d3cqf"]
+[ext_resource type="FontFile" uid="uid://ds0cql4fvxw2v" path="res://New folder/FlatUI4/kenvector_future.ttf" id="1_r70am"]
+[ext_resource type="Theme" uid="uid://bb6vwl0h1flws" path="res://New folder/FlatUI4/kenneyUI-blue.tres" id="2_fsi1b"]
+[ext_resource type="Theme" uid="uid://mbsg4xqnedxi" path="res://New folder/FlatUI4/kenneyUI-red.tres" id="3_fsi1b"]
+[ext_resource type="Theme" uid="uid://h1f7iqhh7ycb" path="res://New folder/FlatUI4/kenneyUI-yellow.tres" id="4_y3bum"]
+
+[node name="and game" type="Control" unique_id=1982576204]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_d3cqf")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=655786485]
+layout_mode = 0
+offset_right = 1154.0
+offset_bottom = 642.0
+
+[node name="ColorRect" type="ColorRect" parent="ColorRect" unique_id=186643395]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -557.0
+offset_top = -302.0
+offset_right = 558.0
+offset_bottom = 302.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="ColorRect" unique_id=1307521898]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -533.0
+offset_top = -273.0
+offset_right = 537.0
+offset_bottom = 280.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.87, 0, 0.014499779, 1)
+
+[node name="ColorRect3" type="ColorRect" parent="ColorRect" unique_id=563324418]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -521.0
+offset_top = -260.0
+offset_right = 522.0
+offset_bottom = 273.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.24288172, 0.41182086, 0.092038564, 1)
+
+[node name="Exit" type="Button" parent="." unique_id=1970058151]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -188.0
+offset_top = 186.0
+offset_right = 211.0
+offset_bottom = 250.12549
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("4_y3bum")
+
+[node name="Label" type="Label" parent="Exit" unique_id=1877548543]
+layout_mode = 0
+offset_left = 149.0
+offset_top = 5.0
+offset_right = 348.0
+offset_bottom = 56.0
+theme_override_colors/font_color = Color(0, 0.83137256, 0.19215687, 1)
+theme_override_fonts/font = ExtResource("1_r70am")
+theme_override_font_sizes/font_size = 38
+text = "Exit"
+
+[node name="label" type="Node" parent="." unique_id=1668695133]
+
+[node name="Label" type="Label" parent="label" unique_id=1843710493]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -336.0
+offset_top = 82.0
+offset_right = 324.0
+offset_bottom = 118.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("1_r70am")
+theme_override_font_sizes/font_size = 31
+text = "Thank you for trying the game."
+
+[node name="Label2" type="Label" parent="label" unique_id=1791897721]
+offset_left = 176.0
+offset_top = 182.0
+offset_right = 1015.0
+offset_bottom = 329.0
+theme = ExtResource("2_fsi1b")
+theme_override_fonts/font = ExtResource("1_r70am")
+theme_override_font_sizes/font_size = 24
+text = "This game was created for learning purposes and to apply what was learned during the tutorial program using Git. It does not reflect our actual skills; it is simply an experiment. We hope you enjoy it."
+autowrap_mode = 2
+
+[node name="Label3" type="Label" parent="label" unique_id=1755257213]
+offset_left = 110.0
+offset_top = 452.0
+offset_right = 539.0
+offset_bottom = 485.0
+theme_override_colors/font_color = Color(0.32, 0.65999997, 1, 1)
+theme_override_fonts/font = ExtResource("1_r70am")
+theme_override_font_sizes/font_size = 19
+text = "Created by @ Mohammed Elsayed"
+
+[node name="Label4" type="Label" parent="label" unique_id=439780460]
+offset_left = 609.0
+offset_top = 451.0
+offset_right = 1003.0
+offset_bottom = 474.0
+theme = ExtResource("3_fsi1b")
+theme_override_colors/font_color = Color(0.96, 0.91199994, 0, 1)
+theme_override_font_sizes/font_size = 19
+text = "Created by @ Youssef Hussein "
+
+[connection signal="pressed" from="Exit" to="." method="_on_exit_pressed"]

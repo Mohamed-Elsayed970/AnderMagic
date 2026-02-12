@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://dbvnms8xmkfle"]
+
+[ext_resource type="Script" path="res://scirap/game_m.gd" id="1_iuicm"]
+
+[node name="Game_M" type="Node2D" unique_id=1152806502 groups=["player"]]
+script = ExtResource("1_iuicm")
