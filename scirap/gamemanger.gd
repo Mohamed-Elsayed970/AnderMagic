@@ -12,4 +12,3 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	$"gui/coins_score".text = str(cions)
 	$"gui/myscore".text = str(scor)
-	pass

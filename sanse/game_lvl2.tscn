@@ -1,5 +1,6 @@
-[gd_scene format=3 uid="uid://2chye1k32j25"]
+[gd_scene format=4 uid="uid://2chye1k32j25"]
 
+[ext_resource type="Script" uid="uid://t57j1ukp85wv" path="res://scirap/game_lvl_2.gd" id="1_hmhbw"]
 [ext_resource type="TileSet" uid="uid://bb0rnt6girrco" path="res://Tilemap/game_tilemap.tres" id="1_vj84i"]
 [ext_resource type="PackedScene" uid="uid://but5t3l3ff3dk" path="res://sanse/player.tscn" id="2_hmhbw"]
 [ext_resource type="PackedScene" uid="uid://d2xgmyvls4kek" path="res://sanse/cion.tscn" id="3_xipch"]
@@ -9,41 +10,144 @@
 size = Vector2(3406.15, 77.899994)
 
 [node name="game" type="Node2D" unique_id=2042196210]
+script = ExtResource("1_hmhbw")
 
 [node name="TileMap" type="Node2D" parent="." unique_id=1116577465]
 
+[node name="background" type="TileMapLayer" parent="TileMap" unique_id=624008947]
+tile_map_data = PackedByteArray("AAADAPr/AAAAAAMAAAADAAAAAAAAAAYAAAADAAEAAAAAAAcAAAAEAPr/AAABAAMAAAAEAAAAAAABAAYAAAAEAAEAAAABAAcAAAAGAAAAAQAAAAIAAGAGAP//AQABAAIAAGAGAP7/AQACAAIAAGAGAP3/AQADAAIAAGADAP3/AAAAAAMAAAADAP7/AAAAAAQAAAADAP//AAAAAAUAAAADAPv/AAAAAAQAAAADAPz/AAAAAAIAAAAEAPv/AAABAAQAAAAEAPz/AAABAAIAAAAEAP3/AAABAAMAAAAEAP7/AAABAAQAAAAEAP//AAABAAUAAAADAPj/AAAAAAEAAAADAPn/AAAAAAIAAAAEAPj/AAABAAEAAAAEAPn/AAABAAIAAAAAAPv/AQABAAMAAAAAAPz/AQABAAQAAAABAPv/AQACAAMAAAAFAPn/AQACAAMAADAFAPj/AQACAAQAADAGAPn/AQABAAMAADAGAPj/AQABAAQAADD+//3/AwAAAAIAAAD+//7/AwAAAAMAAAD+////AwAAAAQAAAAAAPj/AwAAAAAAAAAAAPn/AwAAAAEAAAABAP//AQABAAAAAAAAAP//AQAAAAAAAAAAAAAAAQAAAAEAAAABAAAAAQABAAEAAAACAP//AQACAAAAAAACAAAAAQACAAEAAAAAAP7/AQACAAMAADAAAP3/AQACAAQAADABAP7/AQABAAMAADABAP3/AQABAAQAADAdAPv/AQAGAAAAAAAdAPz/AQAGAAEAAAAeAPv/AQAHAAAAAAAeAPz/AQAHAAEAAAAaAPz/AQABAAIAAGAaAPv/AQACAAIAAGAaAPr/AQADAAIAAGAXAP3/AQAEAAIAAAAYAP3/AQAFAAIAAAAZAP3/AQAGAAIAAAAOAPv/AQAEAAIAAGAOAPr/AQAFAAIAAGAOAPn/AQAGAAIAAGANAPb/AQADAAMAAAANAPf/AQADAAQAAAAOAPb/AQAEAAMAAAAOAPf/AQAEAAQAAAAYAPr/AQAFAAUAAAAYAPv/AQAFAAYAAAAYAPz/AQAFAAcAAAA=")
+tile_set = ExtResource("1_vj84i")
+
 [node name="floor" type="TileMapLayer" parent="TileMap" unique_id=795279851]
+tile_map_data = PackedByteArray("AAAAAAAABQAAAAAAAAABAAAABQABAAAAAAACAAAABQABAAAAAAADAAAABQABAAAAAAAEAAAABQABAAAAAAAFAAAABQABAAAAAAAAAAEABQAAAAEAAAAAAAIABQAAAAIAAAABAAIABQABAAIAAAABAAEABQABAAEAAAACAAEABQABAAEAAAACAAIABQABAAIAAAADAAIABQABAAIAAAADAAEABQABAAEAAAAEAAEABQABAAEAAAAFAAEABQABAAEAAAAFAAIABQABAAIAAAAGAAEABQABAAEAAAAEAAIABQABAAIAAAAGAAIABQABAAIAAAAGAAAABQABAAAAAAAHAAAABQADAAYAAAAHAP//BQAAAAAAAAAIAP//BQACAAAAAAAHAAEABQACAAEAAAAIAAAABQACAAIAAAALAP//BQABAAMAAAAMAP//BQACAAMAAAAOAP//BQADAAMAAAAQAP7/BQAEAAQAAAAQAP//AgADAAEAAAAVAPv/BQADAAEAAAAVAPz/BQADAAEAAAAVAP3/BQADAAIAAAATAP7/AgACAAAAAAARAP7/AgABAAMAAAASAP7/AgABAAMAAAAHAAIABQABAAIAAAAIAAIABQACAAIAAAAIAAEABQADAAAAAAAVAPr/BQADAAEAAAAQAPz/BQACAAIAAAAPAPz/BQABAAIAAAAOAPz/BQABAAIAAAANAPz/BQABAAIAAAAMAPz/BQAAAAIAAAAMAPv/BQAAAAAAAAANAPv/BQABAAAAAAAOAPv/BQABAAAAAAAPAPv/BQABAAAAAAAQAPv/BQACAAAAAAAMAPf/BQAAAAAAAAAMAPj/BQAAAAIAAAANAPf/BQABAAAAAAANAPj/BQABAAIAAAAOAPf/BQABAAAAAAAOAPj/BQABAAIAAAAPAPf/BQABAAAAAAAPAPj/BQABAAIAAAAQAPf/BQACAAAAAAAQAPj/BQACAAIAAAAVAPn/BQADAAAAAAASAPj/BQAAAAMAAAATAPj/BQABAAMAAAAUAPj/BQACAAMAAAAYAPn/BQADAAEAAAAYAPr/BQADAAIAAAAYAPj/BQADAAEAAAAYAPf/BQADAAEAAAAYAPb/BQADAAAAAAAYAPz/BQAAAAAAAAAYAP3/BQAAAAEAAAAYAP7/BQAAAAIAAAAZAPz/BQABAAAAAAAaAPz/BQABAAAAAAAZAP7/BQABAAIAAAAZAP3/BQABAAEAAAAaAP3/BQABAAEAAAAaAP7/BQABAAIAAAAbAPz/BQABAAAAAAAbAP3/BQABAAEAAAAbAP7/BQABAAIAAAAcAPz/BQABAAAAAAAcAP3/BQABAAEAAAAcAP7/BQABAAIAAAAdAPz/BQABAAAAAAAdAP3/BQABAAEAAAAdAP7/BQABAAIAAAAeAPz/BQACAAAAAAAeAP3/BQACAAEAAAAeAP7/BQACAAIAAAAIAPv/BQAAAAMAAAAJAPv/BQABAAMAAAAKAPv/BQACAAMAAAD///z/BQABAAAAAAD///3/BQABAAIAAAAAAPz/BQABAAAAAAAAAP3/BQABAAIAAAABAPz/BQABAAAAAAABAP3/BQABAAIAAAACAPz/BQABAAAAAAACAP3/BQABAAIAAAADAPz/BQABAAAAAAADAP3/BQABAAIAAAAEAPz/BQABAAAAAAAEAP3/BQABAAIAAAAFAPz/BQABAAAAAAAFAP3/BQABAAIAAAAGAPz/BQACAAAAAAAGAP3/BQACAAIAAAD+//z/BQAAAAAAAAD+//3/BQAAAAIAAAD+//f/BQAAAAAAAAD+//j/BQAAAAIAAAD///f/BQABAAAAAAD///j/BQABAAIAAAAAAPf/BQABAAAAAAAAAPj/BQABAAIAAAABAPf/BQAFAAEAAAABAPj/BQABAAIAAAACAPf/BQABAAEAAAACAPj/BQABAAIAAAADAPf/BQAEAAEAAAADAPj/BQABAAIAAAAEAPf/BQABAAAAAAAEAPj/BQABAAIAAAAFAPf/BQABAAAAAAAFAPj/BQABAAIAAAAGAPf/BQACAAAAAAAGAPj/BQACAAIAAAAIAPf/BQAAAAMAAAAJAPf/BQABAAMAAAAKAPf/BQACAAMAAAD8//v/BAAAAAEAAAD4//r/BQAAAAMAAAD5//r/BQABAAMAAAD6//r/BQACAAMAAAAKAP//BQAAAAMAAAABAPb/BAABAAAAAAACAPb/BAACAAAAAAADAPb/BAADAAAAAAAeAPr/BQAAAAMAAAAfAPr/BQABAAMAAAAgAPr/BQACAAMAAAAiAPv/BQAAAAMAAAAjAPv/BQABAAMAAAAkAPv/BQACAAMAAAAhAP//BQADAAEAAAAhAAAABQADAAIAAAAiAP7/AgACAAAAAAAmAAAAAgABAAEAAAAhAP7/BQAEAAQAAAAnAP7/BQADAAAAAAAnAP//BQADAAEAAAAnAAAABQAGAAQAAFArAP7/BQAEAAQAAAArAP//BQADAAEAAAArAAAABQADAAIAAAAsAP7/AgABAAMAAAAtAP7/BQAFAAQAAAAtAP//BQADAAEAAAAtAAAABQADAAIAAAAuAP7/AgABAAMAAAAvAP//BQADAAEAAAAvAAAABQADAAIAAAAvAP7/BQAGAAQAAAAUAP3/AgAAAAEAAAASAPz/BQADAAMAAAD8//n/BQADAAMAAAD6//j/BQADAAMAAAD8//f/BQADAAMAAAA=")
 tile_set = ExtResource("1_vj84i")
 
 [node name="player" parent="." unique_id=476564898 instance=ExtResource("2_hmhbw")]
 z_index = 9
-position = Vector2(656, -154)
+position = Vector2(721, -378)
 
 [node name="coins" type="Node" parent="." unique_id=516753919]
 
 [node name="cion" parent="coins" unique_id=1115266652 instance=ExtResource("3_xipch")]
-position = Vector2(960, -72.00001)
+position = Vector2(2067.0002, -123)
 
-[node name="cion2" parent="coins" unique_id=1962348680 instance=ExtResource("3_xipch")]
-position = Vector2(1790, -41)
+[node name="cion4" parent="coins" unique_id=457093128 instance=ExtResource("3_xipch")]
+position = Vector2(3932, -636.99994)
 
-[node name="cion3" parent="coins" unique_id=2102055323 instance=ExtResource("3_xipch")]
-position = Vector2(1953, -35)
+[node name="cion5" parent="coins" unique_id=1274114395 instance=ExtResource("3_xipch")]
+position = Vector2(4244, -649)
 
-[node name="cion4" parent="coins" unique_id=2139838949 instance=ExtResource("3_xipch")]
-position = Vector2(2146, -51)
+[node name="cion6" parent="coins" unique_id=652466776 instance=ExtResource("3_xipch")]
+position = Vector2(4085, -808)
 
-[node name="cion5" parent="coins" unique_id=175768994 instance=ExtResource("3_xipch")]
-position = Vector2(3277, -46)
+[node name="cion7" parent="coins" unique_id=511116887 instance=ExtResource("3_xipch")]
+position = Vector2(5687, -655)
 
-[node name="cion6" parent="coins" unique_id=1000344054 instance=ExtResource("3_xipch")]
-position = Vector2(3991, -45)
+[node name="cion8" parent="coins" unique_id=1773213770 instance=ExtResource("3_xipch")]
+position = Vector2(5895, -655)
 
-[node name="cion7" parent="coins" unique_id=1972134556 instance=ExtResource("3_xipch")]
-position = Vector2(4190, -53)
+[node name="cion9" parent="coins" unique_id=778317111 instance=ExtResource("3_xipch")]
+position = Vector2(6146, -655)
 
-[node name="cion8" parent="coins" unique_id=1815619306 instance=ExtResource("3_xipch")]
-position = Vector2(4383, -43.999985)
+[node name="cion10" parent="coins" unique_id=1294696767 instance=ExtResource("3_xipch")]
+position = Vector2(8917, -1181)
+
+[node name="cion11" parent="coins" unique_id=952193433 instance=ExtResource("3_xipch")]
+position = Vector2(9149.001, -1181)
+
+[node name="cion12" parent="coins" unique_id=610937634 instance=ExtResource("3_xipch")]
+position = Vector2(9381, -1181)
+
+[node name="cion13" parent="coins" unique_id=299736371 instance=ExtResource("3_xipch")]
+position = Vector2(9589, -1181)
+
+[node name="cion14" parent="coins" unique_id=1440671454 instance=ExtResource("3_xipch")]
+position = Vector2(7117.9995, -3077.0002)
+
+[node name="cion17" parent="coins" unique_id=2135489346 instance=ExtResource("3_xipch")]
+position = Vector2(4880, -2735)
+
+[node name="cion19" parent="coins" unique_id=132933877 instance=ExtResource("3_xipch")]
+position = Vector2(2507, -2197.0002)
+
+[node name="cion20" parent="coins" unique_id=1412676634 instance=ExtResource("3_xipch")]
+position = Vector2(2244, -2197.0002)
+
+[node name="cion21" parent="coins" unique_id=1667450693 instance=ExtResource("3_xipch")]
+position = Vector2(2005.0002, -2197.0002)
+
+[node name="cion22" parent="coins" unique_id=909377941 instance=ExtResource("3_xipch")]
+position = Vector2(1748, -2197.0002)
+
+[node name="cion23" parent="coins" unique_id=2121441552 instance=ExtResource("3_xipch")]
+position = Vector2(1497, -2197.0002)
+
+[node name="cion24" parent="coins" unique_id=872249332 instance=ExtResource("3_xipch")]
+position = Vector2(-3456.9995, -3261)
+
+[node name="cion25" parent="coins" unique_id=1602748312 instance=ExtResource("3_xipch")]
+position = Vector2(-3225, -3261)
+
+[node name="cion26" parent="coins" unique_id=1507993364 instance=ExtResource("3_xipch")]
+position = Vector2(958, -5236.0005)
+
+[node name="cion27" parent="coins" unique_id=751547097 instance=ExtResource("3_xipch")]
+position = Vector2(1245, -5336.0005)
+
+[node name="cion28" parent="coins" unique_id=995634262 instance=ExtResource("3_xipch")]
+position = Vector2(1531, -5212.0005)
+
+[node name="cion18" parent="coins" unique_id=186518436 instance=ExtResource("3_xipch")]
+position = Vector2(4880, -4802)
+
+[node name="cion15" parent="coins" unique_id=1962026239 instance=ExtResource("3_xipch")]
+position = Vector2(7485, -3071)
+
+[node name="cion16" parent="coins" unique_id=191658695 instance=ExtResource("3_xipch")]
+position = Vector2(7834, -3071)
+
+[node name="cion29" parent="coins" unique_id=735546800 instance=ExtResource("3_xipch")]
+position = Vector2(7042, -4914)
+
+[node name="cion30" parent="coins" unique_id=1338212626 instance=ExtResource("3_xipch")]
+position = Vector2(7409.0005, -4907.9995)
+
+[node name="cion31" parent="coins" unique_id=501691028 instance=ExtResource("3_xipch")]
+position = Vector2(7758.0005, -4907.9995)
+
+[node name="cion32" parent="coins" unique_id=1291226680 instance=ExtResource("3_xipch")]
+position = Vector2(13536, -2277.9998)
+
+[node name="cion33" parent="coins" unique_id=749392083 instance=ExtResource("3_xipch")]
+position = Vector2(13903, -2385.9998)
+
+[node name="cion34" parent="coins" unique_id=1786874804 instance=ExtResource("3_xipch")]
+position = Vector2(14252, -2467)
+
+[node name="cion35" parent="coins" unique_id=1863369131 instance=ExtResource("3_xipch")]
+position = Vector2(14578, -2368)
+
+[node name="cion37" parent="coins" unique_id=587108752 instance=ExtResource("3_xipch")]
+position = Vector2(18217, -2783.0002)
+
+[node name="cion38" parent="coins" unique_id=42011109 instance=ExtResource("3_xipch")]
+position = Vector2(17387.002, -1196.0004)
+
+[node name="cion39" parent="coins" unique_id=1729788412 instance=ExtResource("3_xipch")]
+position = Vector2(19748, -211.00005)
+
+[node name="cion40" parent="coins" unique_id=1228158086 instance=ExtResource("3_xipch")]
+position = Vector2(23265, -1733)
+scale = Vector2(57.937317, 57.937317)
+
+[node name="cion36" parent="coins" unique_id=374205317 instance=ExtResource("3_xipch")]
+position = Vector2(14945, -2263.9993)
+
+[node name="cion2" parent="coins" unique_id=1653470881 instance=ExtResource("3_xipch")]
+position = Vector2(2324, -121)
+
+[node name="cion3" parent="coins" unique_id=1132690698 instance=ExtResource("3_xipch")]
+position = Vector2(2636, -121)
 
 [node name="killzone" type="Area2D" parent="." unique_id=269644915]
 position = Vector2(0, -11)
@@ -54,16 +158,16 @@ scale = Vector2(10, 5)
 shape = SubResource("RectangleShape2D_cdrcn")
 
 [node name="CharacterBody2D" parent="killzone" unique_id=1175815023 instance=ExtResource("4_piop3")]
-position = Vector2(4281, -105)
+position = Vector2(1969, -2148)
 
-[node name="CharacterBody2D2" parent="killzone" unique_id=618580252 instance=ExtResource("4_piop3")]
-position = Vector2(7586, -80)
+[node name="CharacterBody2D2" parent="killzone" unique_id=1003087387 instance=ExtResource("4_piop3")]
+position = Vector2(2661, -4728)
 
-[node name="CharacterBody2D3" parent="killzone" unique_id=1380774699 instance=ExtResource("4_piop3")]
-position = Vector2(13177, -114)
+[node name="CharacterBody2D3" parent="killzone" unique_id=1488179226 instance=ExtResource("4_piop3")]
+position = Vector2(8083, -2631)
 
-[node name="CharacterBody2D4" parent="killzone" unique_id=760723937 instance=ExtResource("4_piop3")]
-position = Vector2(15998, -46)
+[node name="CharacterBody2D4" parent="killzone" unique_id=1331322272 instance=ExtResource("4_piop3")]
+position = Vector2(13992, -2123)
 
 [node name="respawn" type="Node2D" parent="." unique_id=2019507942]
 unique_name_in_owner = true
