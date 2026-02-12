@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://b8jtl726sv1by"]
+
+[sub_resource type="Gradient" id="Gradient_uato2"]
+offsets = PackedFloat32Array(0.022167487, 0.86945814)
+colors = PackedColorArray(0.91764706, 0, 0, 1, 1, 1, 1, 1)
+
+[node name="magic" type="Node2D" unique_id=769673876]
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="." unique_id=1208683314]
+amount = 2000
+lifetime = 0.3
+speed_scale = 0.35
+randomness = 0.86
+emission_shape = 1
+emission_sphere_radius = 86.66
+spread = 21.0
+gravity = Vector2(-3000, 0)
+angular_velocity_min = -515.0
+linear_accel_max = 60.0
+scale_amount_max = 11.0
+color_ramp = SubResource("Gradient_uato2")
+hue_variation_min = -0.52
+hue_variation_max = 0.68

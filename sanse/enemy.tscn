@@ -131,9 +131,11 @@ animations = [{
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_r3nwk"]
-radius = 86.023254
+radius = 108.0
 
-[node name="enemy" type="CharacterBody2D" unique_id=1175815023]
+[node name="enemy" type="CharacterBody2D" unique_id=1175815023 groups=["enemy"]]
+collision_layer = 9
+collision_mask = 9
 script = ExtResource("1_50qlj")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1237660383]
@@ -144,10 +146,10 @@ frame_progress = 0.31858906
 
 [node name="RayCast2D" type="RayCast2D" parent="." unique_id=2063207989]
 
-[node name="Area2D" type="Area2D" parent="." unique_id=889396279]
+[node name="Area2D" type="Area2D" parent="." unique_id=889396279 groups=["enemy"]]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=842574894]
-position = Vector2(5, 28)
+position = Vector2(3, 32)
 shape = SubResource("CircleShape2D_r3nwk")
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
