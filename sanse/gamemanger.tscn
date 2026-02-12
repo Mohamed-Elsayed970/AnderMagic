@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://cq75b3hdc3asl" path="res://scirap/gamemanger.gd" id="1_p26mc"]
 [ext_resource type="PackedScene" uid="uid://0o5rslko0nc6" path="res://sanse/gui.tscn" id="2_vjvlo"]
 
-[node name="gamemanger" type="Node2D" unique_id=1152806502 groups=["player"]]
+[node name="gamemanger" type="Node2D" unique_id=1152806502]
 script = ExtResource("1_p26mc")
 
 [node name="gui" parent="." unique_id=308706017 instance=ExtResource("2_vjvlo")]
