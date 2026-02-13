@@ -7,7 +7,7 @@
 [ext_resource type="Script" uid="uid://d38xl5qkfgfea" path="res://scirap/music.gd" id="5_w4mjy"]
 [ext_resource type="Script" uid="uid://c10soinua126h" path="res://scirap/sfx.gd" id="6_22j3v"]
 [ext_resource type="Script" uid="uid://dj8attmst3hmp" path="res://scirap/full_screen_control.gd" id="6_e54vd"]
-[ext_resource type="Theme" uid="uid://h1f7iqhh7ycb" path="res://New folder/FlatUI4/kenneyUI-yellow.tres" id="8_5l3r4"]
+[ext_resource type="Theme" uid="uid://bnhngmri4tfgr" path="res://New folder/FlatUI4/kenneyUI-green.tres" id="8_5l3r4"]
 
 [sub_resource type="StyleBoxLine" id="StyleBoxLine_l1lcx"]
 color = Color(0.9112639, 0.17958257, 0.22127894, 1)
@@ -39,7 +39,7 @@ offset_right = 95.5
 offset_bottom = 47.0
 grow_horizontal = 2
 theme_override_fonts/font = ExtResource("1_5wfyc")
-theme_override_font_sizes/font_size = 31
+theme_override_font_sizes/font_size = 40
 text = "Settings"
 
 [node name="Label2" type="Label" parent="." unique_id=1164116001]
@@ -114,10 +114,10 @@ audio_bus_name = "SFX"
 
 [node name="FullScreenControl" type="CheckButton" parent="." unique_id=1876658547]
 layout_mode = 0
-offset_left = 693.0
-offset_top = 164.0
-offset_right = 963.0
-offset_bottom = 226.0
+offset_left = 738.0
+offset_top = 228.0
+offset_right = 1045.0
+offset_bottom = 319.0
 theme = ExtResource("4_l1lcx")
 text = "Full Scrin"
 script = ExtResource("6_e54vd")

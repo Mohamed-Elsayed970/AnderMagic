@@ -119,14 +119,24 @@ text = "This game was created for learning purposes and to apply what was learne
 autowrap_mode = 2
 
 [node name="Label3" type="Label" parent="label" unique_id=1755257213]
-offset_left = 110.0
-offset_top = 452.0
-offset_right = 539.0
-offset_bottom = 485.0
+offset_left = 318.0
+offset_top = 364.0
+offset_right = 882.0
+offset_bottom = 397.0
+theme_override_colors/font_color = Color(0.9607843, 0.9137255, 0, 1)
+theme_override_fonts/font = ExtResource("1_r70am")
+theme_override_font_sizes/font_size = 25
+text = "Created by @ Mohammed Elsayed"
+
+[node name="Label5" type="Label" parent="label" unique_id=1433523045]
+offset_left = 122.0
+offset_top = 446.0
+offset_right = 551.0
+offset_bottom = 479.0
 theme_override_colors/font_color = Color(0.32, 0.65999997, 1, 1)
 theme_override_fonts/font = ExtResource("1_r70am")
 theme_override_font_sizes/font_size = 19
-text = "Created by @ Mohammed Elsayed"
+text = "Created by @ Hozyfa Batisha"
 
 [node name="Label4" type="Label" parent="label" unique_id=439780460]
 offset_left = 609.0
@@ -134,7 +144,7 @@ offset_top = 451.0
 offset_right = 1003.0
 offset_bottom = 474.0
 theme = ExtResource("3_fsi1b")
-theme_override_colors/font_color = Color(0.96, 0.91199994, 0, 1)
+theme_override_colors/font_color = Color(0.98, 0.049000014, 0, 1)
 theme_override_font_sizes/font_size = 19
 text = "Created by @ Youssef Hussein "
 
