@@ -1,0 +1,11 @@
+[gd_scene format=4 uid="uid://bwk6cs14u23eg"]
+
+[ext_resource type="TileSet" uid="uid://bb0rnt6girrco" path="res://Tilemap/game_tilemap.tres" id="1_yjpfg"]
+
+[node name="game_lvl3" type="Node2D" unique_id=1058614683]
+
+[node name="TileMap" type="Node2D" parent="." unique_id=345186033]
+
+[node name="TileMapLayer" type="TileMapLayer" parent="TileMap" unique_id=327417110]
+tile_map_data = PackedByteArray("AAAAAAAABQAAAAAAAAABAAAABQABAAAAAAACAAAABQABAAAAAAADAAAABQABAAAAAAAEAAAABQABAAAAAAAFAAAABQABAAAAAAAGAAAABQABAAAAAAAHAAAABQABAAAAAAAIAAAABQABAAAAAAAJAAAABQABAAAAAAAKAAAABQABAAAAAAALAAAABQABAAAAAAAMAAAABQABAAAAAAANAAAABQABAAAAAAAOAAAABQABAAAAAAAPAAAABQABAAAAAAA=")
+tile_set = ExtResource("1_yjpfg")

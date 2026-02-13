@@ -1,0 +1,120 @@
+[gd_scene format=3 uid="uid://bna2x1hfpkn2j"]
+
+[ext_resource type="Script" path="res://scirap/control.gd" id="1_fumg3"]
+[ext_resource type="Texture2D" uid="uid://bqvft7c208ln0" path="res://New folder/Gemini_Generated_Image_j71980j71980j719.png" id="1_v6wj7"]
+[ext_resource type="Theme" uid="uid://bnhngmri4tfgr" path="res://New folder/FlatUI4/kenneyUI-green.tres" id="2_fumg3"]
+[ext_resource type="Texture2D" path="res://New folder/controller prompts.png" id="2_v6wj7"]
+[ext_resource type="Texture2D" path="res://New folder/controlls.png" id="3_fumg3"]
+[ext_resource type="FontFile" uid="uid://ds0cql4fvxw2v" path="res://New folder/FlatUI4/kenvector_future.ttf" id="4_knvgy"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_knvgy"]
+texture = ExtResource("1_v6wj7")
+modulate_color = Color(0.39, 0.3861, 0.3861, 1)
+
+[node name="Control" type="Control" unique_id=665369742]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_fumg3")
+
+[node name="Panel" type="Panel" parent="." unique_id=1623197729]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_knvgy")
+
+[node name="Baek2" type="Button" parent="." unique_id=759220861]
+layout_mode = 0
+offset_left = 21.0
+offset_top = 551.0
+offset_right = 212.32413
+offset_bottom = 633.251
+size_flags_vertical = 3
+theme = ExtResource("2_fumg3")
+theme_override_constants/outline_size = 0
+theme_override_font_sizes/font_size = 51
+text = "Baek"
+
+[node name="control" type="Node" parent="." unique_id=2127319759]
+
+[node name="Sprite2D" type="Sprite2D" parent="control" unique_id=307417145]
+texture_filter = 1
+position = Vector2(740, 240)
+scale = Vector2(5.8928576, 4.6999984)
+texture = ExtResource("2_v6wj7")
+region_enabled = true
+region_rect = Rect2(272.38226, 20.01326, 35.921112, 20.013199)
+
+[node name="Sprite2D2" type="Sprite2D" parent="control" unique_id=1344205237]
+texture_filter = 1
+position = Vector2(143, 262)
+scale = Vector2(4.5648146, 4.184783)
+texture = ExtResource("3_fumg3")
+region_enabled = true
+region_rect = Rect2(94.5925, 71.50163, 27.05748, 23.325409)
+
+[node name="Sprite2D3" type="Sprite2D" parent="control" unique_id=1833538720]
+texture_filter = 1
+position = Vector2(367, 263)
+scale = Vector2(5.5390615, 5.897727)
+texture = ExtResource("3_fumg3")
+region_enabled = true
+region_rect = Rect2(24.06716, 125.829185, 32.387543, 11.411156)
+
+[node name="Sprite2D4" type="Sprite2D" parent="control" unique_id=1483598481]
+texture_filter = 1
+position = Vector2(953, 238)
+scale = Vector2(4.326087, 3.1875)
+texture = ExtResource("2_v6wj7")
+region_enabled = true
+region_rect = Rect2(299.20587, 121.00978, 23.074066, 16.109894)
+
+[node name="texet" type="Node" parent="." unique_id=765809465]
+
+[node name="Label" type="Label" parent="texet" unique_id=1098166631]
+offset_left = 93.0
+offset_top = 337.0
+offset_right = 211.0
+offset_bottom = 375.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("4_knvgy")
+theme_override_font_sizes/font_size = 33
+text = "Move"
+
+[node name="Label3" type="Label" parent="texet" unique_id=1551676906]
+offset_left = 683.0
+offset_top = 290.0
+offset_right = 846.0
+offset_bottom = 341.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("4_knvgy")
+theme_override_font_sizes/font_size = 33
+text = "Move"
+
+[node name="Label2" type="Label" parent="texet" unique_id=139100494]
+offset_left = 326.0
+offset_top = 312.0
+offset_right = 444.0
+offset_bottom = 355.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("4_knvgy")
+theme_override_font_sizes/font_size = 33
+text = "Run"
+
+[node name="Label4" type="Label" parent="texet" unique_id=696868412]
+offset_left = 909.0
+offset_top = 284.0
+offset_right = 1027.0
+offset_bottom = 327.0
+theme_override_colors/font_color = Color(0.96474224, 0.96474224, 0.9647421, 1)
+theme_override_fonts/font = ExtResource("4_knvgy")
+theme_override_font_sizes/font_size = 33
+text = "Run"
+
+[connection signal="pressed" from="Baek2" to="." method="_on_baek_2_pressed"]
