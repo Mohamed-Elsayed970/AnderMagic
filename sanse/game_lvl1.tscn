@@ -1,0 +1,269 @@
+[gd_scene format=4 uid="uid://c0xju5gtok8yf"]
+
+[ext_resource type="PackedScene" uid="uid://d2xgmyvls4kek" path="res://sanse/cion.tscn" id="1_ac5rc"]
+[ext_resource type="TileSet" uid="uid://bb0rnt6girrco" path="res://Tilemap/game_tilemap.tres" id="1_swk00"]
+[ext_resource type="PackedScene" uid="uid://but5t3l3ff3dk" path="res://sanse/player.tscn" id="2_ac5rc"]
+[ext_resource type="PackedScene" uid="uid://dl64q0sejkkdx" path="res://sanse/enemy.tscn" id="4_gehw1"]
+[ext_resource type="PackedScene" uid="uid://cm2d8e2wt2h3j" path="res://sanse/transfer_effect.tscn" id="5_qqp6r"]
+[ext_resource type="PackedScene" uid="uid://2chye1k32j25" path="res://sanse/game_lvl2.tscn" id="6_35qnd"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qqp6r"]
+size = Vector2(3406.15, 77.899994)
+
+[node name="game_lvl1" type="Node2D" unique_id=997079595]
+
+[node name="Node" type="Node" parent="." unique_id=1175830298]
+
+[node name="cion" parent="Node" unique_id=1115266652 instance=ExtResource("1_ac5rc")]
+position = Vector2(2076, -137)
+
+[node name="cion2" parent="Node" unique_id=995404722 instance=ExtResource("1_ac5rc")]
+position = Vector2(4562, -137)
+
+[node name="cion8" parent="Node" unique_id=1831536421 instance=ExtResource("1_ac5rc")]
+position = Vector2(4721, -137)
+
+[node name="cion9" parent="Node" unique_id=845536302 instance=ExtResource("1_ac5rc")]
+position = Vector2(4900, -137)
+
+[node name="cion10" parent="Node" unique_id=555293124 instance=ExtResource("1_ac5rc")]
+position = Vector2(6191.0005, -137)
+
+[node name="cion11" parent="Node" unique_id=100856614 instance=ExtResource("1_ac5rc")]
+position = Vector2(10281, -89)
+
+[node name="cion15" parent="Node" unique_id=1490006113 instance=ExtResource("1_ac5rc")]
+position = Vector2(10745, -89)
+
+[node name="cion17" parent="Node" unique_id=397044232 instance=ExtResource("1_ac5rc")]
+position = Vector2(12032, -565)
+
+[node name="cion18" parent="Node" unique_id=331401199 instance=ExtResource("1_ac5rc")]
+position = Vector2(13561, -1058)
+
+[node name="cion19" parent="Node" unique_id=692975518 instance=ExtResource("1_ac5rc")]
+position = Vector2(12032, -1555)
+
+[node name="cion20" parent="Node" unique_id=1136232002 instance=ExtResource("1_ac5rc")]
+position = Vector2(10507, -2090)
+
+[node name="cion21" parent="Node" unique_id=1835638303 instance=ExtResource("1_ac5rc")]
+position = Vector2(8978, -2612)
+
+[node name="cion22" parent="Node" unique_id=378659036 instance=ExtResource("1_ac5rc")]
+position = Vector2(6922, -2612)
+
+[node name="cion23" parent="Node" unique_id=2022965211 instance=ExtResource("1_ac5rc")]
+position = Vector2(6680.0005, -2612)
+
+[node name="cion24" parent="Node" unique_id=214952875 instance=ExtResource("1_ac5rc")]
+position = Vector2(6467.0005, -2612)
+
+[node name="cion25" parent="Node" unique_id=1551523154 instance=ExtResource("1_ac5rc")]
+position = Vector2(6239.0005, -2612)
+
+[node name="cion26" parent="Node" unique_id=1362104951 instance=ExtResource("1_ac5rc")]
+position = Vector2(3958, -2612)
+
+[node name="cion27" parent="Node" unique_id=2051456957 instance=ExtResource("1_ac5rc")]
+position = Vector2(3770, -2612)
+
+[node name="cion28" parent="Node" unique_id=782383218 instance=ExtResource("1_ac5rc")]
+position = Vector2(3590.0002, -2612)
+
+[node name="cion29" parent="Node" unique_id=338294685 instance=ExtResource("1_ac5rc")]
+position = Vector2(3356, -2612)
+
+[node name="cion30" parent="Node" unique_id=1569397154 instance=ExtResource("1_ac5rc")]
+position = Vector2(1810.0002, -3101)
+
+[node name="cion31" parent="Node" unique_id=112342940 instance=ExtResource("1_ac5rc")]
+position = Vector2(1300, -3623.0002)
+
+[node name="cion32" parent="Node" unique_id=1002218512 instance=ExtResource("1_ac5rc")]
+position = Vector2(2460, -4116)
+
+[node name="cion33" parent="Node" unique_id=588568287 instance=ExtResource("1_ac5rc")]
+position = Vector2(4072, -4655)
+
+[node name="cion34" parent="Node" unique_id=1882528370 instance=ExtResource("1_ac5rc")]
+position = Vector2(5567, -5169)
+
+[node name="cion35" parent="Node" unique_id=409059812 instance=ExtResource("1_ac5rc")]
+position = Vector2(5742, -5169)
+
+[node name="cion36" parent="Node" unique_id=740041231 instance=ExtResource("1_ac5rc")]
+position = Vector2(5947, -5169)
+
+[node name="cion37" parent="Node" unique_id=484178057 instance=ExtResource("1_ac5rc")]
+position = Vector2(6143, -5169)
+
+[node name="cion38" parent="Node" unique_id=559868116 instance=ExtResource("1_ac5rc")]
+position = Vector2(7457, -5685)
+
+[node name="cion39" parent="Node" unique_id=7696369 instance=ExtResource("1_ac5rc")]
+position = Vector2(8444, -6190)
+
+[node name="cion40" parent="Node" unique_id=409735295 instance=ExtResource("1_ac5rc")]
+position = Vector2(9490, -6695.0005)
+
+[node name="cion41" parent="Node" unique_id=390027651 instance=ExtResource("1_ac5rc")]
+position = Vector2(10507, -7216.0005)
+
+[node name="cion42" parent="Node" unique_id=1392414750 instance=ExtResource("1_ac5rc")]
+position = Vector2(11513, -7737)
+
+[node name="cion43" parent="Node" unique_id=1819558280 instance=ExtResource("1_ac5rc")]
+position = Vector2(11746, -7737)
+
+[node name="cion44" parent="Node" unique_id=1515294236 instance=ExtResource("1_ac5rc")]
+position = Vector2(11984, -7737)
+
+[node name="cion45" parent="Node" unique_id=1594433232 instance=ExtResource("1_ac5rc")]
+position = Vector2(13455, -7737)
+
+[node name="cion46" parent="Node" unique_id=584259022 instance=ExtResource("1_ac5rc")]
+position = Vector2(13682, -7737)
+
+[node name="cion47" parent="Node" unique_id=1056140282 instance=ExtResource("1_ac5rc")]
+position = Vector2(13915.001, -7737)
+
+[node name="cion48" parent="Node" unique_id=460766388 instance=ExtResource("1_ac5rc")]
+position = Vector2(14117.001, -7737)
+
+[node name="cion49" parent="Node" unique_id=937940558 instance=ExtResource("1_ac5rc")]
+position = Vector2(16114, -8232)
+
+[node name="cion50" parent="Node" unique_id=1152073400 instance=ExtResource("1_ac5rc")]
+position = Vector2(16407, -8184)
+
+[node name="cion52" parent="Node" unique_id=751519592 instance=ExtResource("1_ac5rc")]
+position = Vector2(18120, -8232)
+
+[node name="cion53" parent="Node" unique_id=176700893 instance=ExtResource("1_ac5rc")]
+position = Vector2(18388, -8232)
+
+[node name="cion54" parent="Node" unique_id=2087399676 instance=ExtResource("1_ac5rc")]
+position = Vector2(18656, -8232)
+
+[node name="cion55" parent="Node" unique_id=1272621360 instance=ExtResource("1_ac5rc")]
+position = Vector2(18949, -8232)
+
+[node name="cion56" parent="Node" unique_id=624757860 instance=ExtResource("1_ac5rc")]
+position = Vector2(19212, -8232)
+
+[node name="cion57" parent="Node" unique_id=1946164153 instance=ExtResource("1_ac5rc")]
+position = Vector2(21744, -8232)
+
+[node name="cion58" parent="Node" unique_id=51537855 instance=ExtResource("1_ac5rc")]
+position = Vector2(22037, -8232)
+
+[node name="cion59" parent="Node" unique_id=2062831691 instance=ExtResource("1_ac5rc")]
+position = Vector2(22356, -8232)
+
+[node name="cion60" parent="Node" unique_id=636758673 instance=ExtResource("1_ac5rc")]
+position = Vector2(22619, -8232)
+
+[node name="cion61" parent="Node" unique_id=1602908995 instance=ExtResource("1_ac5rc")]
+position = Vector2(22882, -8232)
+
+[node name="cion62" parent="Node" unique_id=889230657 instance=ExtResource("1_ac5rc")]
+position = Vector2(23928, -8232)
+
+[node name="cion63" parent="Node" unique_id=1428620888 instance=ExtResource("1_ac5rc")]
+position = Vector2(24024, -8232)
+
+[node name="cion64" parent="Node" unique_id=894261118 instance=ExtResource("1_ac5rc")]
+position = Vector2(23976, -8338)
+
+[node name="cion51" parent="Node" unique_id=1599522499 instance=ExtResource("1_ac5rc")]
+position = Vector2(15816, -8184)
+
+[node name="cion16" parent="Node" unique_id=1564065095 instance=ExtResource("1_ac5rc")]
+position = Vector2(10507, -89)
+
+[node name="cion12" parent="Node" unique_id=269005007 instance=ExtResource("1_ac5rc")]
+position = Vector2(8104.0005, -89)
+
+[node name="cion13" parent="Node" unique_id=224076910 instance=ExtResource("1_ac5rc")]
+position = Vector2(8396, -89)
+
+[node name="cion14" parent="Node" unique_id=717955047 instance=ExtResource("1_ac5rc")]
+position = Vector2(8663, -89)
+
+[node name="cion3" parent="Node" unique_id=188608078 instance=ExtResource("1_ac5rc")]
+position = Vector2(4407, -137)
+
+[node name="cion4" parent="Node" unique_id=1055245852 instance=ExtResource("1_ac5rc")]
+position = Vector2(2619, -137)
+
+[node name="cion5" parent="Node" unique_id=1971069427 instance=ExtResource("1_ac5rc")]
+position = Vector2(2460, -137)
+
+[node name="cion6" parent="Node" unique_id=1045076229 instance=ExtResource("1_ac5rc")]
+position = Vector2(2197, -137)
+
+[node name="cion7" parent="Node" unique_id=1812907379 instance=ExtResource("1_ac5rc")]
+position = Vector2(2331, -137)
+
+[node name="Map" type="Node" parent="." unique_id=1077035021]
+
+[node name="TileMapLayer" type="TileMapLayer" parent="Map" unique_id=867863409]
+z_index = 10
+tile_map_data = PackedByteArray("AAAAAAAABQAAAAAAAAABAAAABQABAAAAAAACAAAABQABAAAAAAADAAAABQABAAAAAAAEAAAABQABAAAAAAAFAAAABQABAAAAAAAGAAAABQABAAAAAAAHAAAABQABAAAAAAAIAAAABQABAAAAAAAJAAAABQABAAAAAAAKAAAABQABAAAAAAALAAAABQABAAAAAAAAAAEABQAAAAEAAAAAAAIABQAAAAEAAAAAAAMABQAAAAIAAAABAAMABQABAAIAAAACAAMABQABAAIAAAADAAMABQABAAIAAAAEAAMABQABAAIAAAAFAAMABQABAAIAAAAGAAMABQABAAIAAAAHAAMABQABAAIAAAAJAAMABQABAAIAAAAKAAMABQABAAIAAAALAAMABQABAAIAAAAMAAMABQABAAIAAAAIAAMABQABAAIAAAANAAMABQACAAIAAAANAAIABQACAAEAAAANAAEABQACAAEAAAANAAAABQACAAAAAAAMAAAABQABAAAAAAAGAAEABQABAAEAAAAFAAEABQAFAAAAAAAEAAEABQAEAAAAAAADAAEABQABAAEAAAACAAEABQAFAAAAAAABAAEABQAEAAAAAAABAAIABQAEAAEAAAACAAIABQAFAAEAAAADAAIABQABAAEAAAAEAAIABQAEAAEAAAAFAAIABQAFAAEAAAAGAAIABQABAAEAAAAHAAIABQAEAAEAAAAHAAEABQAEAAAAAAAIAAEABQAFAAAAAAAIAAIABQAFAAEAAAAJAAIABQABAAEAAAAJAAEABQABAAEAAAAKAAEABQAEAAAAAAAKAAIABQAEAAEAAAALAAIABQAFAAEAAAALAAEABQAFAAAAAAAMAAEABQABAAEAAAAMAAIABQABAAEAAAAPAAAABQAAAAMAAAAQAAAABQABAAMAAAARAAAABQACAAMAAAATAAAABQAAAAMAAAAUAAAABQABAAMAAAAVAAAABQACAAMAAAAWAP//BQAAAAMAAAAXAP//BQABAAMAAAAYAP//BQACAAMAAAAZAP7/BQAAAAMAAAAaAP7/BQABAAMAAAAbAP7/BQACAAMAAAAWAP3/BQAAAAMAAAAXAP3/BQABAAMAAAAYAP3/BQACAAMAAAATAPz/BQAAAAMAAAAUAPz/BQABAAMAAAAVAPz/BQACAAMAAAAQAPv/BQAAAAMAAAARAPv/BQABAAMAAAASAPv/BQACAAMAAAAFAPv/BQAAAAAAAAAFAPz/BQAAAAIAAAAGAPv/BQACAAQAAAAGAPz/BQACAAUAAAAHAPv/BQADAAQAAAAHAPz/BQADAAUAAAAIAPv/BQACAAQAAAAIAPz/BQACAAUAAAAJAPv/BQADAAQAAAAJAPz/BQADAAUAAAAKAPv/BQACAAQAAAAKAPz/BQACAAUAAAALAPv/BQADAAQAAAALAPz/BQADAAUAAAAMAPv/BQACAAQAAAAMAPz/BQACAAUAAAANAPv/BQADAAQAAAANAPz/BQADAAUAAAAOAPv/BQACAAAAAAAOAPz/BQACAAIAAAADAPr/BQADAAMAAAACAPn/BQADAAMAAAAFAPj/AgACAAAAAAAEAPj/AgABAAAAAAAIAPf/AgACAAAAAAAHAPf/AgABAAAAAAAKAPb/BQAEAAQAAAAKAPf/BQAEAAUAAAAKAPj/BQAEAAYAAAALAPb/BQAFAAQAAAALAPf/BQAFAAUAAAALAPj/BQAFAAYAAAAMAPb/BQAGAAQAAAAMAPf/BQAGAAUAAAAMAPj/BQAGAAYAAAAOAPX/AgADAAAAAAAOAPb/AgADAAEAAAAQAPT/AgADAAAAAAAQAPX/AgADAAEAAAASAPP/AgADAAAAAAASAPT/AgADAAEAAAAUAPL/AgADAAAAAAAUAPP/AgADAAEAAAAWAPH/AgABAAEAAAAXAPH/AgACAAEAAAAaAPH/BQACAAQAAAAaAPL/BQACAAUAAAAbAPH/BQADAAQAAAAbAPL/BQADAAUAAAAZAPH/BQAAAAAAAAAcAPH/BQACAAAAAAAZAPL/BQAAAAIAAAAcAPL/BQACAAIAAAAeAPD/BAABAAAAAAAfAPD/BAACAAAAAAAgAPD/BAADAAAAAAAeAPH/BAADAAAAADAfAPH/BAACAAAAADAgAPH/BAABAAAAADAiAPD/BQAAAAAAAAAiAPH/BQAAAAEAAAAiAPL/BQAAAAIAAAAjAPL/BQABAAIAAAAkAPL/BQABAAIAAAAlAPL/BQABAAIAAAAmAPL/BQABAAIAAAAnAPL/BQABAAIAAAAoAPL/BQABAAIAAAApAPL/BQABAAIAAAAqAPL/BQABAAIAAAAjAPD/BQABAAAAAAAkAPD/BQABAAAAAAAlAPD/BQABAAAAAAAmAPD/BQABAAAAAAAnAPD/BQABAAAAAAAoAPD/BQABAAAAAAApAPD/BQABAAAAAAAqAPD/BQABAAAAAAArAPL/BQABAAIAAAArAPD/BQABAAAAAAArAPH/BQAAAAYAAAAmAPH/BQABAAEAAAAlAPH/BQAAAAYAAAAkAPH/BQABAAEAAAAjAPH/BQAAAAYAAAAnAPH/BQAAAAYAAAAoAPH/BQABAAEAAAApAPH/BQAAAAYAAAAqAPH/BQABAAEAAAAsAPD/BQABAAAAAAAtAPD/BQABAAAAAAAuAPD/BQABAAAAAAAsAPL/BQABAAIAAAAtAPL/BQABAAIAAAAuAPL/BQABAAIAAAAuAPH/BQABAAEAAAAtAPH/BQAAAAYAAAAsAPH/BQABAAEAAAAvAPD/BQACAAAAAAAvAPH/BQACAAEAAAAvAPL/BQACAAIAAAAxAO//AgABAAEAAAAyAO//AgACAAIAAAAzAO//AgACAAEAAAA=")
+tile_set = ExtResource("1_swk00")
+metadata/_edit_lock_ = true
+
+[node name="TileMapLayer2" type="TileMapLayer" parent="Map" unique_id=1547796130]
+tile_map_data = PackedByteArray("AAAOAPv/AQAAAAIAAAAGAPz/AwAAAAIAAAAGAP3/AwAAAAMAAAAGAP7/AwAAAAQAAAAJAPz/AwAAAAIAAAAJAP3/AwAAAAMAAAAJAP7/AwAAAAQAAAAMAPz/AwAAAAIAAAAMAP3/AwAAAAMAAAAMAP7/AwAAAAQAAAAHAP//AQABAAMAAAAHAAAAAQABAAQAAAAIAP//AQACAAMAAAAIAAAAAQACAAQAAAAPAPv/AQABAAIAAAAQAPv/AQACAAIAAAARAPv/AwAAAAIAAAARAAAAAQAAAAIAAAASAAAAAQABAAIAAAATAAAAAQACAAIAAAAUAAAAAQADAAIAAAAKAPv/AAAAAAAAAAAKAPz/AAAAAAEAAAAKAP3/AAAAAAIAAAAKAP7/AAAAAAMAAAAKAP//AAAAAAQAAAAKAAAAAAAAAAUAAAAKAAEAAAAAAAYAAAAKAAIAAAAAAAcAAAALAPv/AAABAAAAAAALAPz/AAABAAEAAAALAP3/AAABAAIAAAALAP7/AAABAAMAAAALAP//AAABAAQAAAALAAAAAAABAAUAAAALAAEAAAABAAYAAAALAAIAAAABAAcAAAAIAPr/AQABAAMAAAAIAPv/AQABAAQAAAAJAPr/AQACAAMAAAAJAPv/AQACAAQAAAAEAPf/AQABAAMAAAAEAPj/AQABAAQAAAAFAPf/AQACAAMAAAAFAPj/AQACAAQAAAAXAPH/AQAAAAIAAAAYAPH/AQABAAIAAAAZAPH/AQACAAIAAAAgAPH/AQAAAAIAAAAhAPH/AQABAAIAAAAiAPH/AQACAAIAAAAcAPH/AQAAAAIAAAAdAPH/AQABAAIAAAAeAPH/AQACAAIAAAAMAPj/AwAAAAIAAAAMAPn/AwAAAAMAAAAMAPr/AwAAAAQAAAAKAPj/AwAAAAIAAAAKAPn/AwAAAAMAAAAKAPr/AwAAAAQAAAAcAPL/AwAAAAIAAAAcAPP/AwAAAAMAAAAcAPT/AwAAAAQAAAAZAPL/AwAAAAIAAAAZAPP/AwAAAAMAAAAZAPT/AwAAAAQAAAAUAPz/AwAAAAIAAAAUAP3/AwAAAAMAAAAUAP7/AwAAAAQAAAARAPz/AwAAAAMAAAARAP3/AwAAAAQAAAAaAP7/AwAAAAIAAAAaAP//AwAAAAMAAAAaAAAAAwAAAAQAAAAHAPf/AwAAAAMAAAAHAPj/AwAAAAQAAAAQAPX/AwAAAAMAAAAQAPb/AwAAAAQAAAASAPT/AwAAAAMAAAASAPX/AwAAAAQAAAAUAPP/AwAAAAMAAAAUAPT/AwAAAAQAAAAMAP//AQAGAAAAAAAMAAAAAQAGAAEAAAANAP//AQAHAAAAAAANAAAAAQAHAAEAAAA=")
+tile_set = ExtResource("1_swk00")
+metadata/_edit_lock_ = true
+
+[node name="player" parent="." unique_id=476564898 instance=ExtResource("2_ac5rc")]
+position = Vector2(342, -196)
+
+[node name="respawn" type="Node2D" parent="." unique_id=1144800266]
+unique_name_in_owner = true
+position = Vector2(19260, -9648)
+
+[node name="killzone" type="Area2D" parent="." unique_id=223139472]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="killzone" unique_id=984389884]
+position = Vector2(11286, 1080)
+scale = Vector2(10, 5)
+shape = SubResource("RectangleShape2D_qqp6r")
+
+[node name="enemy" parent="killzone" unique_id=1175815023 instance=ExtResource("4_gehw1")]
+position = Vector2(3173, -61)
+
+[node name="enemy2" parent="killzone" unique_id=897495802 instance=ExtResource("4_gehw1")]
+position = Vector2(4769, -78)
+
+[node name="enemy3" parent="killzone" unique_id=62089160 instance=ExtResource("4_gehw1")]
+position = Vector2(6777, -2612)
+
+[node name="enemy4" parent="killzone" unique_id=1360289764 instance=ExtResource("4_gehw1")]
+position = Vector2(3173, -2612)
+
+[node name="enemy5" parent="killzone" unique_id=2027639236 instance=ExtResource("4_gehw1")]
+position = Vector2(5418, -5154)
+
+[node name="enemy6" parent="killzone" unique_id=300234960 instance=ExtResource("4_gehw1")]
+position = Vector2(13226, -7735)
+
+[node name="enemy7" parent="killzone" unique_id=1734938776 instance=ExtResource("4_gehw1")]
+position = Vector2(17814, -8233)
+
+[node name="enemy8" parent="killzone" unique_id=1983553209 instance=ExtResource("4_gehw1")]
+position = Vector2(20773, -8250)
+
+[node name="enemy9" parent="killzone" unique_id=402997902 instance=ExtResource("4_gehw1")]
+position = Vector2(24242, -8243)
+
+[node name="TransferEffect" parent="." unique_id=884710988 instance=ExtResource("5_qqp6r")]
+position = Vector2(25867, -8793)
+scale = Vector2(11.791626, 9.499996)
+frame_progress = 0.7709902
+target_level = ExtResource("6_35qnd")
+
+[connection signal="body_entered" from="killzone" to="player" method="_on_killzone_body_entered"]

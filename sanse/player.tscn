@@ -217,9 +217,11 @@ radius = 49.0
 height = 300.0
 
 [node name="player" type="CharacterBody2D" unique_id=476564898 groups=["player"]]
+z_index = 9
 script = ExtResource("1_yd7nh")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1152067645]
+z_index = 9
 sprite_frames = SubResource("SpriteFrames_j5wvb")
 animation = &"jump"
 autoplay = "idle"

@@ -1,0 +1,85 @@
+[gd_scene format=3 uid="uid://cm2d8e2wt2h3j"]
+
+[ext_resource type="Script" uid="uid://cjaqafyxc4vtr" path="res://scirap/transfer_effect.gd" id="1_30trp"]
+[ext_resource type="Texture2D" uid="uid://qwgea67arh64" path="res://New folder/500 Bullet 24x24 Free/Bullet 24x24 Part 10B Free.png" id="1_rymbw"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_30trp"]
+atlas = ExtResource("1_rymbw")
+region = Rect2(0, 216, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e30y2"]
+atlas = ExtResource("1_rymbw")
+region = Rect2(24, 216, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jbixr"]
+atlas = ExtResource("1_rymbw")
+region = Rect2(48, 216, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4a1vb"]
+atlas = ExtResource("1_rymbw")
+region = Rect2(72, 216, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wtobf"]
+atlas = ExtResource("1_rymbw")
+region = Rect2(96, 216, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yg6d6"]
+atlas = ExtResource("1_rymbw")
+region = Rect2(120, 216, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x1lm1"]
+atlas = ExtResource("1_rymbw")
+region = Rect2(144, 216, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d2pvq"]
+atlas = ExtResource("1_rymbw")
+region = Rect2(168, 216, 24, 24)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4u0i3"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_30trp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e30y2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jbixr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4a1vb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wtobf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yg6d6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x1lm1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d2pvq")
+}],
+"loop": true,
+"name": &"default",
+"speed": 20.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_i3dy7"]
+
+[node name="TransferEffect" type="AnimatedSprite2D" unique_id=884710988]
+texture_filter = 1
+scale = Vector2(6, 6)
+sprite_frames = SubResource("SpriteFrames_4u0i3")
+autoplay = "default"
+frame_progress = 0.37446174
+script = ExtResource("1_30trp")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1385047040]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1196058701]
+shape = SubResource("CircleShape2D_i3dy7")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

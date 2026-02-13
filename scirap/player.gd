@@ -63,6 +63,9 @@ func killplayer():
 	$AnimatedSprite2D.flip_h = false
 
 
+
+
+
 func _on_killzone_body_entered(body: Node2D) -> void:
 	if body == self:
 		killplayer()

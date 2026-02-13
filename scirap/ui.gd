@@ -2,7 +2,7 @@ extends Control
 
 
 func _on_play_pressed() -> void:
-	get_tree().change_scene_to_file("res://sanse/game_lvl2.tscn")
+	get_tree().change_scene_to_file("res://sanse/game_lvl1.tscn")
 	GameM._start()
 	pass 
 
