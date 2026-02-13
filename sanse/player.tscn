@@ -235,7 +235,3 @@ limit_bottom = 800
 
 [node name="magicspawn" type="Node2D" parent="." unique_id=1655010046]
 unique_name_in_owner = true
-
-[node name="SFX" type="AudioStreamPlayer2D" parent="." unique_id=1354974395]
-volume_db = -22.208
-autoplay = true
