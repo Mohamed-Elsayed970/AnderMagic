@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bna2x1hfpkn2j"]
 
-[ext_resource type="Script" path="res://scirap/control.gd" id="1_fumg3"]
+[ext_resource type="Script" uid="uid://b0p3ym2x4o813" path="res://scirap/control.gd" id="1_fumg3"]
 [ext_resource type="Texture2D" uid="uid://bqvft7c208ln0" path="res://New folder/Gemini_Generated_Image_j71980j71980j719.png" id="1_v6wj7"]
 [ext_resource type="Theme" uid="uid://bnhngmri4tfgr" path="res://New folder/FlatUI4/kenneyUI-green.tres" id="2_fumg3"]
 [ext_resource type="Texture2D" path="res://New folder/controller prompts.png" id="2_v6wj7"]
@@ -20,32 +20,11 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_fumg3")
 
-[node name="Panel" type="Panel" parent="." unique_id=1623197729]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_styles/panel = SubResource("StyleBoxTexture_knvgy")
-
-[node name="Baek2" type="Button" parent="." unique_id=759220861]
-layout_mode = 0
-offset_left = 21.0
-offset_top = 551.0
-offset_right = 212.32413
-offset_bottom = 633.251
-size_flags_vertical = 3
-theme = ExtResource("2_fumg3")
-theme_override_constants/outline_size = 0
-theme_override_font_sizes/font_size = 51
-text = "Baek"
-
 [node name="control" type="Node" parent="." unique_id=2127319759]
 
 [node name="Sprite2D" type="Sprite2D" parent="control" unique_id=307417145]
 texture_filter = 1
-position = Vector2(740, 240)
+position = Vector2(740, 242)
 scale = Vector2(5.8928576, 4.6999984)
 texture = ExtResource("2_v6wj7")
 region_enabled = true
@@ -116,5 +95,26 @@ theme_override_colors/font_color = Color(0.96474224, 0.96474224, 0.9647421, 1)
 theme_override_fonts/font = ExtResource("4_knvgy")
 theme_override_font_sizes/font_size = 33
 text = "Run"
+
+[node name="Panel" type="Panel" parent="." unique_id=1623197729]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_knvgy")
+
+[node name="Baek2" type="Button" parent="." unique_id=759220861]
+layout_mode = 0
+offset_left = 21.0
+offset_top = 551.0
+offset_right = 212.32413
+offset_bottom = 633.251
+size_flags_vertical = 3
+theme = ExtResource("2_fumg3")
+theme_override_constants/outline_size = 0
+theme_override_font_sizes/font_size = 51
+text = "Baek"
 
 [connection signal="pressed" from="Baek2" to="." method="_on_baek_2_pressed"]

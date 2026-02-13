@@ -13,14 +13,24 @@ config_version=5
 config/name="fuak"
 run/main_scene="uid://cr25k850hb08c"
 config/features=PackedStringArray("4.6", "Forward Plus")
+config/icon="res://icon.svg"
+
+[audio]
+
+buses/default_bus_layout="uid://cjv2x7ktjs4vs"
 
 [autoload]
 
 GameM="*uid://ll7devti4o1l"
 
+[display]
+
+window/stretch/mode="canvas_items"
+
 [global_group]
 
 player=""
+ui=""
 enemy=""
 
 [input]
