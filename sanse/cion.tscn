@@ -51,7 +51,7 @@ radius = 6.0827627
 
 [node name="cion" type="AnimatedSprite2D" unique_id=1115266652]
 texture_filter = 1
-scale = Vector2(5, 5)
+scale = Vector2(6, 6)
 sprite_frames = SubResource("SpriteFrames_3yeda")
 autoplay = "default"
 frame_progress = 0.32828933
