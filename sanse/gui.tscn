@@ -51,15 +51,13 @@ animations = [{
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 1018.0
-offset_top = 1.0
-offset_right = 327.00012
-offset_bottom = -391.0
+offset_left = 1000.0
+offset_top = 4.0
+offset_right = 309.00012
+offset_bottom = -388.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 60
-text = "0
-"
 
 [node name="myscore" type="Label" parent="." unique_id=462660812]
 anchors_preset = -1
@@ -75,6 +73,7 @@ text = "00"
 horizontal_alignment = 2
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1918730151]
+texture_filter = 1
 position = Vector2(1124, 47)
 scale = Vector2(3.564, 3)
 sprite_frames = SubResource("SpriteFrames_ul6qk")

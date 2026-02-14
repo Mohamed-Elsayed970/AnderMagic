@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://b8jtl726sv1by"]
 
 [sub_resource type="Gradient" id="Gradient_uato2"]
-offsets = PackedFloat32Array(0.022167487, 0.86945814)
-colors = PackedColorArray(0.91764706, 0, 0, 1, 1, 1, 1, 1)
+offsets = PackedFloat32Array(0.027210884, 0.2993197, 0.59183675, 0.8707483)
+colors = PackedColorArray(0.46947998, 0.97, 0.27159998, 1, 0.95, 0, 0, 1, 0.27999997, 0.664, 1, 1, 0.28, 0.28, 0.28, 1)
 
 [node name="magic" type="Node2D" unique_id=769673876]
 

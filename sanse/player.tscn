@@ -232,7 +232,7 @@ shape = SubResource("CapsuleShape2D_dhh26")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1475210936]
 z_index = 8
-zoom = Vector2(0.5, 0.5)
+zoom = Vector2(0.25, 0.25)
 limit_bottom = 3171
 
 [node name="magicspawn" type="Node2D" parent="." unique_id=1655010046]

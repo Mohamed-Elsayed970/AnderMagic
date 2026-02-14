@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://t4wobhyc45cr"]
 
-[ext_resource type="Script" uid="uid://bekyw153nh3y6" path="res://scirap/magicarea.gd" id="1_2uhtf"]
+[ext_resource type="Script" path="res://scirap/magicarea.gd" id="1_2uhtf"]
 [ext_resource type="PackedScene" uid="uid://b8jtl726sv1by" path="res://sanse/magic.tscn" id="1_ny3ip"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_2uhtf"]
@@ -18,7 +18,6 @@ position = Vector2(-27, 6)
 shape = SubResource("CircleShape2D_2uhtf")
 
 [node name="Timer" type="Timer" parent="." unique_id=1843229365]
-wait_time = 2.0
 one_shot = true
 autostart = true
 
